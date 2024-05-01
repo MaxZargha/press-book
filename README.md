@@ -1,142 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
     <meta charset="UTF-8">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>art</title>
-<meta name="generator" content="Jekyll v3.9.5" />
-<meta property="og:title" content="art" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://maxzargha.github.io/art/" />
-<meta property="og:url" content="https://maxzargha.github.io/art/" />
-<meta property="og:site_name" content="art" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="art" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"art","name":"art","url":"https://maxzargha.github.io/art/"}</script>
-<!-- End Jekyll SEO tag -->
-
+    <title>art</title>
+    <meta name="generator" content="Jekyll v3.9.5" />
+    <meta property="og:title" content="art" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="canonical" href="https://maxzargha.github.io/art/" />
+    <meta property="og:url" content="https://maxzargha.github.io/art/" />
+    <meta property="og:site_name" content="art" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="art" />
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"WebSite","headline":"art","name":"art","url":"https://maxzargha.github.io/art/"}
+    </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="/art/assets/css/style.css?v=c7da7687486623eea756b63746ee8f8996e9b362">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/art/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
+</head>
+<body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
-
     <header class="page-header" role="banner">
-      <h1 class="project-name">art</h1>
-      <h2 class="project-tagline"></h2>
-      
+        <h1 class="project-name">art</h1>
         <a href="https://github.com/MaxZargha/art" class="btn">View on GitHub</a>
-      
-      
     </header>
 
     <main id="content" class="main-content" role="main">
-      <p>&lt;!DOCTYPE html&gt;</p>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galerie de Max Zargha</title>
-    <style>
-        /* Style pour l'image d'en-tête */
-        .header-image {
-            display: block;
-            margin: 0 auto; /* Centre l'image horizontalement */
-            max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de l'écran */
-            height: auto; /* Maintient le ratio de l'image */
-            width: 100%; /* Utilise 100% de la largeur de l'écran */
-        }
+        <!-- En-tête de la page avec image -->
+        <img src="zargha_site.jpg" class="header-image" alt="En-tête Max Zargha" />
 
-        /* Styles pour le carrousel */
-        .carousel {
-            width: 60%;
-            overflow: hidden;
-            margin: 50px auto;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .carousel-container {
-            display: flex;
-            transition: transform 1s ease;
-            cursor: pointer; /* Indique que les éléments sont cliquables */
-        }
-
-        .carousel-item {
-            flex: 0 0 100%; /* Chaque item prend 100% de la largeur du carousel */
-        }
-
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <!-- En-tête de la page avec image -->
-    <img src="zargha site.jpg" class="header-image" alt="En-tête Max Zargha" />
-
-    <!-- Carrousel d'images -->
-    <div class="carousel" onclick="nextImage()">
-        <div class="carousel-container" id="carouselContainer">
-            <div class="carousel-item">
-                <img src="Colonel.jpg" alt="Image 1" />
-            </div>
-            <div class="carousel-item">
-                <img src="L'Autel.jpg" alt="Image 2" />
-            </div>
-            <div class="carousel-item">
-                <img src="Le Chirurgien.jpg" alt="Image 3" />
-            </div>
-            <div class="carousel-item">
-                <img src="Surréalisme.jpg" alt="Image 4" />
-            </div>
-            <div class="carousel-item">
-                <img src="Tristesse.jpg" alt="Image 5" />
+        <!-- Carrousel d'images -->
+        <div class="carousel" onclick="nextImage()">
+            <div class="carousel-container" id="carouselContainer">
+                <div class="carousel-item"><img src="Colonel.jpg" alt="Image 1" /></div>
+                <div class="carousel-item"><img src="L'Autel.jpg" alt="Image 2" /></div>
+                <div class="carousel-item"><img src="Le Chirurgien.jpg" alt="Image 3" /></div>
+                <div class="carousel-item"><img src="Surréalisme.jpg" alt="Image 4" /></div>
+                <div class="carousel-item"><img src="Tristesse.jpg" alt="Image 5" /></div>
             </div>
         </div>
-    </div>
 
-    <script>
-        var currentIndex = 0;
-        function nextImage() {
-            var container = document.getElementById("carouselContainer");
-            var totalItems = container.children.length;
-            currentIndex = (currentIndex + 1) % totalItems; // Cela permet de boucler le carrousel
-            var newTranslateValue = -100 * currentIndex;
-            container.style.transform = `translateX(${newTranslateValue}%)`;
-        }
-    </script>
-</body>
-</html>
-
-
-
-      <footer class="site-footer">
-        
-          <span class="site-footer-owner"><a href="https://github.com/MaxZargha/art">art</a> is maintained by <a href="https://github.com/MaxZargha">MaxZargha</a>.</span>
-        
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
+        <script>
+            var currentIndex = 0;
+            function nextImage() {
+                var container = document.getElementById("carouselContainer");
+                var totalItems = container.children.length;
+                currentIndex = (currentIndex + 1) % totalItems; // Cela permet de boucler le carrousel
+                var newTranslateValue = -100 * currentIndex;
+                container.style.transform = `translateX(${newTranslateValue}%)`;
+            }
+        </script>
     </main>
-  </body>
+
+    <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/MaxZargha/art">art</a> is maintained by <a href="https://github.com/MaxZargha">MaxZargha</a>.</span>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+    </footer>
+</body>
 </html>
